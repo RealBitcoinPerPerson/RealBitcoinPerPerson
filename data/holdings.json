@@ -1,0 +1,95 @@
+{
+  "_comment": "Non-public-company holdings. Public cos fetched live from CoinGecko. Edit via GitHub web UI (pencil icon) any time new data drops. The site pulls this file on every page load.",
+  "last_updated": "2026-04-14",
+  "circulating_supply": 19850000,
+  "entities": {
+    "etf": [
+      {
+        "name": "BlackRock iShares (IBIT)",
+        "btc": 612000
+      },
+      {
+        "name": "Fidelity Wise (FBTC)",
+        "btc": 205000
+      },
+      {
+        "name": "Grayscale (GBTC + mini)",
+        "btc": 245000
+      },
+      {
+        "name": "ARK 21Shares (ARKB)",
+        "btc": 53000
+      },
+      {
+        "name": "Bitwise (BITB)",
+        "btc": 46000
+      },
+      {
+        "name": "Other ETFs (global)",
+        "btc": 180000
+      }
+    ],
+    "country": [
+      {
+        "name": "United States (seized)",
+        "btc": 198109
+      },
+      {
+        "name": "China (seized)",
+        "btc": 190000
+      },
+      {
+        "name": "United Kingdom (seized)",
+        "btc": 61000
+      },
+      {
+        "name": "Ukraine",
+        "btc": 46351
+      },
+      {
+        "name": "Bhutan",
+        "btc": 13029
+      },
+      {
+        "name": "El Salvador",
+        "btc": 6144
+      },
+      {
+        "name": "Finland (seized)",
+        "btc": 1981
+      },
+      {
+        "name": "Georgia (seized)",
+        "btc": 66
+      }
+    ],
+    "private": [
+      {
+        "name": "Block.one",
+        "btc": 164000
+      },
+      {
+        "name": "Tether",
+        "btc": 82454
+      },
+      {
+        "name": "Xapo",
+        "btc": 10000
+      },
+      {
+        "name": "Other private cos.",
+        "btc": 50000
+      }
+    ],
+    "lost": [
+      {
+        "name": "Satoshi Nakamoto (est.)",
+        "btc": 1100000
+      },
+      {
+        "name": "Lost / dormant coins (est.)",
+        "btc": 2500000
+      }
+    ]
+  }
+}
