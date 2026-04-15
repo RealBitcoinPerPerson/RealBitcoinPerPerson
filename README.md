@@ -1,6 +1,6 @@
-# realbitcoinperperson.com
+# Sats Per Person
 
-Bitcoin per person, but subtract the coins held by corporations, countries, ETFs, and lost wallets.
+Bitcoin per person, but subtract the coins held by corporations, countries, ETFs, and lost wallets. Live at [satsperperson.xyz](https://satsperperson.xyz).
 
 ## File layout
 

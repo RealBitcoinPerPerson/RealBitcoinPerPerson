@@ -3,21 +3,22 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Real Bitcoin Per Person — your actual slice after corps, countries & ETFs</title>
-<meta name="description" content="Bitcoin per person, but subtract the coins held by corporations, countries, ETFs, and lost wallets. See what your real slice costs." />
-<link rel="canonical" href="https://realbitcoinperperson.com/" />
+<title>Sats Per Person — your real slice of bitcoin, minus the whales</title>
+<meta name="description" content="How many sats are actually left for you after corps, countries & ETFs take their cut. Live, interactive, opinionated." />
+<link rel="canonical" href="https://satsperperson.xyz/" />
 <meta name="theme-color" content="#f7931a" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://realbitcoinperperson.com/" />
-<meta property="og:title" content="Your REAL Slice of Bitcoin" />
-<meta property="og:description" content="Circulating supply minus coins held by corps, countries & ETFs. See what your real slice actually costs." />
-<meta property="og:image" content="https://realbitcoinperperson.com/og-image.png" />
+<meta property="og:url" content="https://satsperperson.xyz/" />
+<meta property="og:title" content="Sats Per Person — your real slice of bitcoin" />
+<meta property="og:description" content="Circulating supply minus coins held by corps, countries & ETFs. See what's actually left for you." />
+<meta property="og:image" content="https://satsperperson.xyz/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Your REAL Slice of Bitcoin" />
+<meta name="twitter:site" content="@Sats_Per_Person" />
+<meta name="twitter:title" content="Sats Per Person — your real slice of bitcoin" />
 <meta name="twitter:description" content="Bitcoin per person — minus the whales. See what your real slice costs." />
-<meta name="twitter:image" content="https://realbitcoinperperson.com/og-image.png" />
+<meta name="twitter:image" content="https://satsperperson.xyz/og-image.png" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23f7931a'/%3E%3Ctext x='50' y='72' font-size='72' font-family='Arial' font-weight='bold' text-anchor='middle' fill='white'%3E%E2%82%BF%3C/text%3E%3C/svg%3E" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
@@ -92,8 +93,8 @@
 <body>
 <div class="container">
   <header>
-    <h1>Your <span class="orange">Real</span> Slice of Bitcoin</h1>
-    <p>How much BTC is left per person once you subtract coins that aren't really in circulation.</p>
+    <h1><span class="orange">Sats</span> Per Person</h1>
+    <p>Your real slice of bitcoin — after corps, countries &amp; ETFs take their cut.</p>
   </header>
 
   <div class="hero">
@@ -459,13 +460,13 @@ document.getElementById("toggleAll").addEventListener("click", () => {
   render();
 });
 document.getElementById("shareTwitter").addEventListener("click", () => {
-  const txt = `After subtracting what corps, countries & ETFs already hold, your real slice of bitcoin is ${fmtBtc(lastAdjPer)} BTC — worth about ${btcPrice ? fmtUsd(lastAdjPer * btcPrice) : "a latte"}.`;
-  const url = "https://realbitcoinperperson.com";
+  const txt = `After subtracting what corps, countries & ETFs already hold, your real slice of bitcoin is ${fmtBtc(lastAdjPer)} BTC — worth about ${btcPrice ? fmtUsd(lastAdjPer * btcPrice) : "a latte"}. via @Sats_Per_Person`;
+  const url = "https://satsperperson.xyz";
   window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}`, "_blank");
 });
 document.getElementById("shareCopy").addEventListener("click", async () => {
   try {
-    await navigator.clipboard.writeText("https://realbitcoinperperson.com");
+    await navigator.clipboard.writeText("https://satsperperson.xyz");
     const b = document.getElementById("shareCopy");
     const orig = b.textContent; b.textContent = "Copied!";
     setTimeout(() => b.textContent = orig, 1500);
