@@ -19,7 +19,11 @@
 <meta name="twitter:title" content="Sats Per Person — your real slice of bitcoin" />
 <meta name="twitter:description" content="Bitcoin per person — minus the whales. See what your real slice costs." />
 <meta name="twitter:image" content="https://satsperperson.xyz/og-image.png" />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23f7931a'/%3E%3Ctext x='50' y='72' font-size='72' font-family='Arial' font-weight='bold' text-anchor='middle' fill='white'%3E%E2%82%BF%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   :root { --bg:#0b0d10; --panel:#15181d; --panel-2:#1c2027; --accent:#f7931a; --accent-2:#ffb04a; --text:#f5f5f7; --muted:#8a93a3; --good:#4ade80; --border:#2a2f38; }
@@ -27,9 +31,11 @@
   html, body { margin:0; padding:0; background: radial-gradient(1200px 600px at 50% -200px, #1a1410 0%, var(--bg) 60%); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif; min-height:100vh; }
   .container { max-width: 1150px; margin: 0 auto; padding: 40px 24px 80px; }
   header { text-align:center; margin-bottom: 32px; }
-  header h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 8px; letter-spacing: -0.02em; }
-  header h1 .orange { color: var(--accent); }
-  header p { color: var(--muted); margin: 0; font-size: 15px; }
+  .wordmark { display:inline-flex; align-items:flex-start; gap: 14px; margin: 0 0 14px; }
+  .wordmark .sats { font-size: clamp(44px, 7vw, 76px); font-weight: 900; color: var(--accent); letter-spacing: -0.03em; line-height: 0.9; font-family: "Inter", -apple-system, sans-serif; }
+  .wordmark .btc-sup { font-size: clamp(16px, 2.4vw, 26px); color: var(--accent); font-weight: 700; margin-top: 4px; }
+  .plate { display:inline-block; background: #fff; color: #0b0d10; border: 2px solid var(--accent); border-radius: 10px; padding: 6px 16px; font-size: clamp(14px, 2vw, 20px); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+  header p { color: var(--muted); margin: 14px 0 0; font-size: 15px; }
   .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 28px; }
   @media (max-width: 720px) { .hero { grid-template-columns: 1fr; } }
   .card { background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 24px; }
@@ -93,7 +99,10 @@
 <body>
 <div class="container">
   <header>
-    <h1><span class="orange">Sats</span> Per Person</h1>
+    <div class="wordmark">
+      <span class="sats">SATS<span class="btc-sup">₿</span></span>
+    </div>
+    <div><span class="plate">Per Person</span></div>
     <p>Your real slice of bitcoin — after corps, countries &amp; ETFs take their cut.</p>
   </header>
 
@@ -179,6 +188,7 @@
   <footer>
     <p><span id="liveStatus">Public company holdings live from CoinGecko</span>. Other categories snapshot last updated <strong id="snapshotDate">…</strong>. Price via <a href="https://www.coingecko.com" target="_blank">CoinGecko</a>. Population from UN projection.</p>
     <p>Inspired by <a href="https://bitcoinperperson.com" target="_blank">bitcoinperperson.com</a> and <a href="https://bitcointreasuries.net" target="_blank">bitcointreasuries.net</a>. Numbers are approximate — don't make financial decisions based on a silly webpage.</p>
+    <p style="margin-top:18px; color:var(--accent-2); font-weight:500; letter-spacing:0.04em;">Stay humble, stack sats. 🟧</p>
   </footer>
 </div>
 
